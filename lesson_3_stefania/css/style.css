@@ -1,0 +1,84 @@
+#top {
+	color: red;
+}
+
+.nav-bar {
+	color: rosybrown;
+}
+
+header a {
+	color: rgb(62, 189, 140);
+}
+
+.nav {
+	color: rgb(194, 0, 0);
+}
+
+#flora,
+#location {
+	color: rgb(28, 94, 236);
+}
+
+div.text {
+	color: blue;
+}
+
+.histoty-uman p {
+	color: green;
+}
+
+#history {
+	color: blueviolet;
+}
+
+div.histoty-uman span {
+	color: red;
+}
+
+.histoty-uman p a {
+	color: red;
+}
+
+.sad>p {
+	color: rgb(88, 15, 15);
+}
+
+#gardens {
+	color: yellowgreen;
+}
+
+div.sad p a {
+	color: rgb(56, 190, 85);
+}
+
+#restoration,
+#gallery {
+	color: blue;
+}
+
+.restoration-park p span {
+	color: rgb(0, 225, 241);
+}
+
+.galery-park p {
+	color: rgb(107, 94, 107);
+}
+
+.restoration-park>p {
+	color: rgb(114, 13, 75);
+}
+
+
+
+.text-lorem-footer~p {
+	color: red;
+}
+
+
+.foter-now+p {
+	color: red;
+}
+
+.footer-last a {
+	color: rgb(255, 80, 138)
+}
