@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+
+@font-face {
+	font-family: "beermoney";
+	src: url("../fonts/beermoney-regular.woff2")format("woff2"), url("../fonts/beermoney-regular.woff")format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Sunday-Regular";
+	src: url("../fonts/Sunday-Regular.woff2")format("woff2"), url("../fonts/Sunday-Regular.woff")format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: "brokgauzefron";
+	src: url("../fonts/brokgauzefron.woff2")format("woff2"), url("../fonts/brokgauzefron.woff")format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+/*! header */
+#title {
+	font-family: "beermoney", cursive, sans-serif;
+	font-weight: 400;
+	font-size: 40px;
+	font-style: oblique;
+	color: rgba(0, 0, 0, 0.932);
+	text-align: center;
+	text-decoration: underline;
+	text-shadow: 6px 5px 5px;
+	line-height: 1.2;
+	text-indent: 15px;
+	letter-spacing: 6px;
+	white-space: nowrap;
+	word-spacing: 3px;
+
+}
+
+.header-block img {
+	padding-left: 100px;
+}
+
+.content,
+.nav {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	text-align: center;
+	text-shadow: 4px 4px 4px;
+	font-style: italic;
+	font-size: 18px;
+}
+
+.header-block {
+	background-color: #412f2f6b;
+	margin-top: 5px;
+
+
+}
+
+.title-content {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: rgb(29, 3, 3);
+	text-align: center;
+	text-decoration: underline;
+	line-height: 1.5;
+	text-indent: 20px;
+	letter-spacing: 2px;
+	white-space: nowrap;
+	word-spacing: 2px;
+
+}
+
+
+
+.header-content .header-text {
+	font-family: "brokgauzefron", sans-serif;
+	font-weight: 400;
+	color: rgb(22, 109, 96);
+	font-size: 14px;
+	text-align: justify;
+	line-height: 1.4;
+	text-indent: 20px;
+	letter-spacing: 1px;
+	white-space: normal;
+	word-spacing: 1px;
+
+}
+
+.header-text+p {
+
+	font-family: "brokgauzefron", sans-serif;
+	font-weight: 400;
+	color: rgb(109, 74, 22);
+	font-size: 15px;
+	text-align: justify;
+	line-height: 1.4;
+	text-indent: 20px;
+	letter-spacing: 1px;
+	white-space: normal;
+	word-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+.header-content {
+	background-color: #200b0b6b;
+}
+
+/*!mein */
+#review {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	color: blue;
+	font-size: 18px;
+	text-align: center;
+	line-height: 1.4;
+	padding-top: 10px;
+	text-decoration: underline;
+	letter-spacing: 1px;
+	white-space: nowrap;
+}
+
+.main-block>p {
+	font-family: "Roboto+Condensed", sans-serif;
+	font-weight: 400;
+	color: rgb(105, 10, 10);
+	font-size: 15px;
+	text-align: justify;
+	text-indent: 20px;
+	line-height: 1.4;
+	letter-spacing: 1px;
+	white-space: normal;
+	word-spacing: 1px;
+	padding-bottom: 10px;
+}
+
+#design {
+	font-family: "Roboto+Condensed", cursive, sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	font-style: oblique;
+	color: rgba(0, 0, 0, 0.932);
+	text-align: center;
+	text-decoration: underline;
+	text-shadow: 5px 5px 5px;
+	line-height: 1.2;
+	text-indent: 15px;
+	letter-spacing: 6px;
+	white-space: nowrap;
+	word-spacing: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.main-disign h3 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	line-height: 1.4;
+	padding-top: 10px;
+	text-decoration: underline;
+	letter-spacing: 1px;
+	white-space: nowrap;
+	color: green;
+}
+
+.main-disign * {
+	font-family: "Roboto+Condensed", sans-serif;
+	font-weight: 400;
+	color: rgb(92, 59, 1);
+	font-size: 15px;
+	text-align: justify;
+	line-height: 1.4;
+	text-indent: 20px;
+	letter-spacing: 1px;
+	white-space: normal;
+	word-spacing: 1px;
+	padding-bottom: 10px;
+
+}
+
+.main-block,
+.main-disign {
+	background-color: #1f16166b
+}
+
+
+/*! fotter */
+
+
+#comfort {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 35px;
+	font-style: oblique;
+	color: rgba(92, 10, 10, 0.932);
+	text-align: center;
+	text-decoration: underline;
+	text-shadow: 6px 5px 5px;
+	line-height: 1.2;
+	text-indent: 15px;
+	letter-spacing: 6px;
+	white-space: nowrap;
+	word-spacing: 3px;
+	padding-bottom: 10px;
+}
+
+.comfort-text~p {
+	font-family: "Roboto+Condensed", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	color: rgb(48, 0, 0);
+	text-align: justify;
+	line-height: 1.4;
+	text-indent: 20px;
+	letter-spacing: 1px;
+	white-space: normal;
+	word-spacing: 1px;
+}
+
+span {
+	font-family: "beermoney", cursive, sans-serif;
+	color: rgb(92, 119, 92);
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 400;
+	text-decoration: line-through;
+	text-transform: uppercase;
+	line-height: 1.4;
+	letter-spacing: 1px;
+}
+
+.footer-last {
+	font-family: "beermoney", cursive, sans-serif;
+	font-weight: 400;
+	font-size: 40px;
+	font-style: oblique;
+
+	text-shadow: 6px 5px 5px;
+	line-height: 1.2;
+	text-indent: 15px;
+	letter-spacing: 6px;
+	white-space: nowrap;
+	word-spacing: 3px;
+	color: rgb(211, 73, 73);
+	margin-right: 100px;
+
+}
+
+
+
+.comfort-text {
+	font-family: "Roboto+Condensed", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	color: rgb(4, 34, 59);
+	text-align: justify;
+	line-height: 1.4;
+	text-indent: 20px;
+	letter-spacing: 1px;
+	white-space: normal;
+	word-spacing: 1px;
+	padding-top: 10px;
+}
+
+footer {
+	background-color: #3828286b
+}
