@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+
+
+body {
+	font-family: "lato", sans-serif;
+}
+
+
+.block-header,
+.block-main,
+.block-footer {
+	margin: 0 auto;
+	max-width: 810px;
+}
+
+
+
+
+
+.top-img-header img {
+	max-width: 100%;
+	margin-bottom: 60px;
+	border-radius: 4px;
+}
+
+
+.header-top {
+	font-weight: 900;
+	font-size: 46px;
+	color: #1E212C;
+	line-height: 130%;
+	align-items: center;
+	margin-bottom: 40px;
+
+
+
+
+}
+
+
+
+
+/* mein */
+
+
+.mein-text {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom: 24px;
+
+}
+
+.main-text-block {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+	margin-bottom: 48px;
+
+}
+
+.main-text-one-two {
+	padding-bottom: 30px;
+}
+
+
+
+.main-text-two {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+	padding-left: 58px;
+	margin-bottom: 48px;
+
+}
+
+
+
+/* footer */
+.foter-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+	margin-bottom: 24px;
+
+}
+
+
+
+.footer-text-two {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+	margin-bottom: 24px;
+
+
+
+}
+
+.item {
+	padding-left: 31px;
+	margin-bottom: 4px;
+
+}
+
+
+
+
+
+.footer-text-tree {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+
+}
+
+/*! =======================практика=========================== */
+
+
+
+
+
+
+
+
+
+.block-test {
+
+	margin-top: 150px;
+	background-color: blueviolet;
+	padding: 15px;
+	border: 5px solid transparent;
+}
+
+.block-test:hover {
+
+	border: 5px solid #000;
+
+}
+
+.span-text {
+	background-color: green;
+	width: 100px;
+	display: inline-block;
+	border: 5px solid rgb(0, 0, 0);
+	padding: 15px;
+
+
+}
+
+.text-p {
+	margin-top: 70px;
+	background-color: red;
+	display: inline-block;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-color: #8d7584;
+	overflow: auto;
+}
+
+
+.items {
+	background-color: rgb(0, 255, 76);
+	width: 220px;
+	display: inline-block;
+	font-size: 20px;
+	margin-top: 30px;
+	padding: 20px;
+	border: 50px #000;
+
+
+
+
+}
+
+
+
+
+.cars img:hover {
+	border: 5px solid transparent;
+
+}
+
+.cars img {
+	display: inline-block;
+	max-height: 100px;
+	margin-top: 50px;
+
+
+
+	border: 5px solid rgb(37, 35, 35);
+
+}
+
+.link {
+	display: inline-block;
+	outline: 1px solid red;
+	font-size: 20px;
+	margin: 20px;
+	border-radius: 50px;
+}
+
+.link:focus {
+	outline: 1px solid black;
+
+}
+
+
+
+.cirkle {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	background-color: #94828d;
+	margin: 0 auto;
+	box-shadow: inset 0px 0px 20px 5px rgb(165, 192, 13), 0px 0px 20px 5px rgb(14, 13, 102);
+}
+
+.cirkle:hover {
+	border: 5px solid transparent;
+
+}
+
+/* поява анімації */
+.block-anim {
+	background-color: blueviolet;
+	padding: 15px;
+	margin-bottom: 50px;
+	transition: all 0.3s ease 0s;
+	opacity: 0;
+	visibility: visible;
+
+}
+
+.block-anim:hover {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+
+.button {
+	display: inline-block;
+	background-color: #424551;
+	padding: 15px;
+	color: #fff;
+	max-width: 300px;
+	border-radius: 20px;
+	box-shadow: 0 5px 0 #000;
+	transition: all 0.3s ease 0s;
+
+
+
+}
+
+
+.button:hover {
+	margin-top: 3px;
+	box-shadow: 0 2px 0 #000;
+}
