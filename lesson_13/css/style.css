@@ -1,0 +1,409 @@
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+
+[class*="__container"] {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+body {
+	background: url("../img/cosmos.jpg") 0 0 / cover no-repeat;
+}
+
+.block {
+	padding: 20px;
+}
+
+/* .header__block {
+	padding: 25px;
+	position: relative;
+
+} */
+
+/*
+.block__item {
+	height: 150px;
+	width: 150px;
+	background-color: grey;
+
+} */
+
+/* .block:hover .block__item {
+	height: 250px;
+	width: 250px;
+
+	background-color: #77608d; */
+
+/* transition-duration: 2s;
+	transition-property: all;
+	transition-delay: 1s;
+	transition-timing-function: ease; */
+/* transition: width 0.3s ease 0s, height 0.5s ease-in 0.8s;
+} */
+
+
+/*  цікава кнопка з рисочкою */
+/* 
+.link {
+	color: #fff;
+	position: relative;
+	top: 20px;
+
+
+
+}
+
+.link::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 0%;
+	left: 0;
+	height: 1px;
+	background-color: red;
+
+}
+
+.link:hover {
+	color: green;
+}
+
+.link:hover::after {
+	width: 100%;
+	transition: all 0.3s ease 1s;
+}
+ */
+
+/* при хавері стає прикольна картинка */
+
+/* 
+.image {
+	width: 200px;
+	overflow: hidden;
+	display: block;
+	position: relative;
+
+}
+
+.image::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0.5;
+	background-color: rgb(0, 0, 0);
+	transition: opacity 0.3s ease 0s;
+	z-index: 2;
+}
+
+.image img {
+	max-width: 100%;
+	transition: all 0.8s ease 0s;
+
+}
+
+.image:hover img {
+	transform: scale(1.1);
+
+}
+
+.image:hover::before {
+	opacity: 0;
+} */
+
+
+
+/* поява анімації тексту */
+
+
+/* .block__appearance {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+} */
+
+
+
+
+
+/* =====================поява текста з анімації, об'єкт title  
+одни для всіх і в кейм фреймі один заданий із різними параметрами */
+/* 
+
+.title {
+	font-size: 40px;
+	font-weight: 700;
+	animation: title 4s ease forwards;
+	transform: translate(0px, 50%);
+	opacity: 0;
+
+}
+
+.title:not(:last-child) {
+	margin-bottom: 20px;
+
+}
+
+.sub-title {
+	font-size: 24px;
+	animation: title 4s ease 0.5s forwards;
+	transform: translate(0px, 50%);
+	opacity: 0;
+}
+
+.sub-title:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.text {
+	line-height: 1.5;
+	animation: title 4s ease 1s forwards;
+	transform: translate(0px, 50%);
+	opacity: 0;
+}
+
+@keyframes title {
+	0% {
+		transform: translate(0px, 50%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0px, 0%);
+		opacity: 1;
+	}
+}
+
+ */
+
+
+/* ===================================animation========== */
+/* /* безкінченно разів буде крутитись */
+
+
+/* 
+.block__animation {}
+
+.block__animation-item {
+	width: 150px;
+	height: 150px;
+	background-color: darkgray;
+	animation-name: rotate-block;
+	animation-duration: 15s;
+	
+	animation-iteration-count: 5;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+
+
+
+}
+
+
+@keyframes rotate-block {
+	0% {
+		transform: translate(-200%, 0);
+
+	}
+
+	20% {
+		transform: translate(200px, 0px);
+	}
+
+	80%{
+		transform: translate(200px,0px);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translate(1000px, 0px);
+		transform: rotate(180deg);
+	}
+}
+ */
+
+
+/* хмаринки==================== */
+
+.block__clouds {
+	width: 300px;
+	border-top: 5px solid rgb(24, 23, 23);
+	margin: 0 auto;
+	position: relative;
+	height: 300px;
+}
+
+.block__clouds-item {
+	position: absolute;
+	top: 0;
+	width: 33.333%;
+	height: 100%;
+	transform-origin: top;
+}
+
+.block__clouds-item::after {
+	content: "";
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: url("../img/zira.jpg");
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.block__clouds-item::before {
+	content: "";
+	width: 4px;
+	height: 100%;
+	position: absolute;
+	background-color: rgb(53, 53, 53);
+	left: 50%;
+	transform: translate(-50%, 0px);
+}
+
+.block__clouds-item:nth-child(1) {
+	left: 0;
+	animation: clouds 3s infinite ease-in-out alternate;
+}
+
+
+.block__clouds-item:nth-child(2) {
+	left: 33.333%;
+	animation: clouds 3.5s infinite ease-in-out alternate;
+}
+
+
+.block__clouds-item:nth-child(3) {
+	animation: clouds 3.9s infinite ease-in-out alternate;
+	right: 0;
+}
+
+@keyframes clouds {
+	0% {
+		transform: rotate(10deg)
+	}
+
+	100% {
+		transform: rotate(-10deg)
+	}
+}
+
+
+.page__animation {
+	position: relative;
+}
+
+.page__comet {
+	position: absolute;
+	bottom: 200px;
+
+
+}
+
+.page__comet img {
+
+	height: 200px;
+	width: 200px;
+	animation: comet 4s infinite linear forwards;
+
+}
+
+@keyframes comet {
+	0% {
+		transform: translate(-200%, 0);
+	}
+
+	100% {
+		transform: translate(1500px, 600px);
+		opacity: 0.7;
+
+	}
+}
+
+.page__spacecraft {
+	position: relative;
+	top: 130px;
+}
+
+.page__spacecraft img {
+	width: 300px;
+	height: 400px;
+	position: absolute;
+	top: 105px;
+	animation: spacecraft 15s 3 ease 1s forwards;
+}
+
+
+@keyframes spacecraft {
+	0% {
+		transform: translate(0px, 0px);
+
+	}
+
+
+
+	20% {
+		transform: rotate(60deg)
+	}
+
+	50% {
+		transform: translate(1200px, -500px)
+	}
+
+	70% {
+		transform: translate(1200px, 0px);
+	}
+
+
+	85% {
+		transform: rotate(-90deg);
+	}
+
+	100% {
+
+		transform: translate(-500px, 0px);
+
+	}
+}
+
+
+
+.page__craft-dark {
+	position: relative;
+	bottom: 50px;
+	right: 150px;
+
+}
+
+.page__craft-dark img {
+	position: absolute;
+	animation: dark 10s  linear 10 forwards;
+
+}
+
+
+@keyframes dark {
+	0% {
+		transform: translate(-200px, 0px);
+
+	}
+
+
+	20% {
+		transform: translate(500px, 0px);
+
+	}
+
+	70% {
+		transform: translate(500px, 0px);
+	}
+
+	100% {
+		transform: translate(2000px, 0px);
+	}
+}
