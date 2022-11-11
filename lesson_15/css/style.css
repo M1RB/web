@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #424551;
+}
+
+
+/* Обгортка  */
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper>main {
+	flex-grow: 1;
+}
+
+/* Обмежуючий контейнер по 15 px padding то є стандарт на данний момент */
+
+[class*="__container"] {
+	width: 1260px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+
+
+
+
+.header {
+	z-index: 90;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 0;
+	background-color: rgba(230, 210, 210, 0.7);
+
+}
+
+
+
+.header__container {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+}
+
+
+
+
+.header__logo {}
+
+.header__menu {
+	flex-wrap: wrap;
+	flex-grow: 1;
+}
+
+.menu {}
+
+.menu__list {
+	display: flex;
+	gap: 40px;
+	flex-wrap: wrap;
+	row-gap: 10px;
+
+
+}
+
+.menu__link {
+	font-weight: 700;
+	z-index: 3;
+}
+
+
+
+.menu__link:hover {
+	text-decoration: underline;
+}
+
+.menu__item {}
+
+.header__login-form {
+	display: flex;
+	align-items: center;
+	gap: 36px;
+}
+
+.login-form-header {}
+
+.login-form-header__button {}
+
+.button {}
+
+.login-form-header__register {
+	background: url("../img/person.svg") left no-repeat;
+	font-weight: 700;
+	line-height: 1.25;
+	padding-left: 24px;
+}
+
+.login-form-header__register:hover {
+	text-decoration: underline;
+}
+
+
+/* ===============================================================MAIN=== */
+
+
+.main__article {}
+
+
+.page {
+	margin-bottom: 180px;
+}
+
+.page__main {
+	background: linear-gradient(55.95deg, rgba(255, 64, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+	position: relative;
+
+}
+
+.main-block {
+	padding: 200px 0 80px 0;
+}
+
+.main-block__container {
+	z-index: 4;
+}
+
+.main-block__content {
+	margin-bottom: 189px;
+
+}
+
+.content {
+	display: flex;
+
+
+}
+
+.content__main {
+	flex: 0 1 50%;
+	padding-right: 45px;
+
+
+}
+
+.content__main:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.content__play {
+	font-weight: 700;
+	font-size: 14px;
+
+	display: inline-flex;
+	align-items: center;
+	color: #1E212C;
+	gap: 16px;
+	position: relative;
+}
+
+.content__play:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+.content__play::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 52px;
+	width: 52px;
+	border-radius: 50%;
+	background: red;
+	opacity: 0.12;
+	animation: play 2s infinite ease alternate;
+
+
+
+}
+
+.content__play::before {
+	content: "";
+	flex: 0 0 52px;
+	height: 52px;
+	width: 52px;
+	border-radius: 50%;
+	background: red url("../img/polygon.svg")center no-repeat;
+
+}
+
+@keyframes play {
+	0% {
+		transform: scale(1.4);
+	}
+
+	100% {
+		transform: scale(1.8);
+	}
+}
+
+.content__title {
+	color: #1E212C;
+	font-weight: 900;
+	line-height: 1;
+	margin-bottom: 60px;
+	align-items: center;
+	font-size: 64px;
+}
+
+.content__buttons {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+}
+
+
+
+
+.button {}
+
+.button--border {}
+
+.main-block__image {}
+
+
+
+.image__img {
+	max-width: 100%;
+	margin-right: -47px;
+}
+
+.main-block__column {}
+
+.column {
+	display: flex;
+	justify-content: space-between;
+	gap: 66px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+
+.column__block {}
+
+.block-column-item {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+}
+
+.block-column-item__number {
+	color: #1E212C;
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1.3;
+
+}
+
+.block-column-item__text {
+	color: #1E212C;
+	line-height: 1.5;
+
+}
+
+.column__circle {
+	background: #FF3F3A;
+	border-radius: 50%;
+	flex: 0 0 8px;
+	height: 8px;
+
+}
+
+
+
+
+
+
+/* ====================декор== */
+
+.main-block__decor {}
+
+.decor-main {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.decor-main__item {
+	position: absolute;
+}
+
+.decor-main__item--1 {
+
+	width: 96px;
+	height: 96px;
+	top: 12%;
+	left: 4.2%;
+	background: url("../img/1.svg") 0 0 no-repeat;
+}
+
+
+.decor-main__item--2 {
+
+	width: 110px;
+	height: 110px;
+	top: 3.1%;
+	right: 5%;
+	background: url("../img/2.svg") 0 0 no-repeat;
+	transform: rotate(0deg);
+	/* 
+	 */
+}
+
+
+.decor-main__item--3 {
+
+	width: 187px;
+	height: 137px;
+	bottom: 5.5%;
+	right: -1.5%;
+	background: url("../img/3.svg") 0 0 no-repeat;
+	transform: rotate(0deg);
+}
+
+
+.decor-main__item--4 {
+
+	width: 88px;
+	height: 47px;
+	top: 44%;
+	left: 40%;
+	background: url("../img/4.svg") 0 0 no-repeat;
+}
+
+.decor-main__item--5 {
+
+	width: 61px;
+	height: 61px;
+	bottom: 24%;
+	left: 38%;
+	background: url("../img/5.svg") 0 0 no-repeat;
+}
+
+.decor-main__item--6 {
+	width: 284px;
+	height: 284px;
+	bottom: -9.2%;
+	left: -5.5%;
+	background: url("../img/6.svg") 0 0 no-repeat;
+}
+
+
+/* ==============================================================================================================Залишаю пустими CSS класи можливо ще буду вписувати туди щось не видаляю============ */
+
+
+/*!! =============================================footer================================== */
+
+
+
+.footer {}
+
+.footer__block {}
+
+.block-footer {}
+
+.block-footer__container {}
+
+.block-footer__about-us {}
+
+.us-about {
+	display: flex;
+	gap: 135px;
+	position: relative;
+	align-items: center;
+
+}
+
+.us-about__image {
+	flex: 0 1 57.3%;
+}
+
+
+.us-about__image img {
+	max-width: 100%;
+
+}
+
+.us-about-text {}
+
+.us-about__sub-title {
+	margin-bottom: 8px;
+	color: #1E212C;
+	line-height: 1.5;
+}
+
+.us-about__title {
+	margin-bottom: 40px;
+	color: #1E212C;
+	line-height: 1.3;
+	font-size: 46px;
+	font-weight: 900;
+}
+
+
+
+.us-about__list {
+	display: inline-block;
+}
+
+.us-about__list {
+	margin-bottom: 22px;
+}
+
+
+.list-item__items {
+	line-height: 1.6;
+
+
+}
+
+.list-item__items:not(:last-child) {
+	margin-bottom: 12px;
+
+}
+/* ++++++++++++++++++++++++++ */
+.us-about__button{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	
+} 
+.us-about__button span{
+	align-self: center;
+} 
+
+/* +++++++++++++++++++++ */
+.list-item__items{
+	position: relative;
+	padding-left: 32px;
+}
+
+.us-about__list li::before{
+	content: "";
+	width: 16px;
+	height: 16px;
+	background: url("../img/check.svg") 0 0 ;
+	position: absolute;
+	top: 5px;
+	left:0;
+}
+
+
+
+
+
+
