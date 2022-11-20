@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_16</title>
+</head>
+
+
+
+
+
+
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+
+
+
+
+
+		<main class="page">
+
+			<section class="main">
+				<div class="main__container">
+					<div class="main__image">
+
+						<img class="main__img" src="img/illustration.svg" alt="illustration">
+					</div>
+
+
+
+					<div class="main__about-us about-main ">
+						<div class="about-main__text text">
+							<h2 class="text__sub-title">Any questions?</h2>
+							<h1 class="text__title">Drop us a line</h1>
+						</div>
+
+						<form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="about-main__form">
+
+							<div class="about-main__question-items">
+
+								<div class="about-main__linner">
+									<div class="about-main__line">
+										<label class="about-main__label" for="fitst-name">First Name*</label>
+										<input class="about-main__input" id="fitst-name" type="text" required
+											placeholder="Your first name">
+									</div>
+
+									<div class="about-main__line">
+										<label class="about-main__label" for="las-name">Last Name*</label>
+
+										<input class="about-main__input" id="las-name" type="text" required
+											placeholder="Your last name">
+									</div>
+
+
+								</div>
+
+
+
+								<div class="about-main__ma-pho">
+									<div class="about-main__line">
+										<!--! Тип email - Однорядковий ввід поштової адреси -->
+										<label class="about-main__label" for="email-01">Email*</label>
+										<input class="about-main__input" id="email-01" required autocomplete="off"
+											placeholder="Your working email" name="mail" type="email">
+									</div>
+
+									<div class="about-main__line">
+										<!--! Тип tel - поле вводу телефонного номеру -->
+										<label class="about-main__label" for="phone-01">Phone</label>
+										<input class="about-main__input" id="phone-01" autocomplete="off"
+											placeholder="Your phone number" name="phone" type="tel">
+									</div>
+								</div>
+
+
+
+
+
+								<div class="about-main__line-mass">
+									<label class="about-main__label">Message*</label>
+									<textarea name="message" placeholder="Your message" class="about-main__area"></textarea>
+								</div>
+							</div>
+
+							<div class="about-main__down">
+
+								<div class="about-main__box">
+
+
+									<input id="box-1" checked class="about-main__input-chk" required name="car" type="checkbox">
+									<label class="about-main__labels" for="box-1">I agree to receive communications from Createx
+										Online
+										School</label>
+
+
+								</div>
+
+
+								<button type="submit" class=" about-main__button button"> <span>Send message</span></button>
+
+							</div>
+
+
+
+
+
+
+
+						</form>
+
+
+					</div>
+
+
+
+
+
+				</div>
+			</section>
+
+			
+		</main>
+
+
+
+
+
+
+
+
+
+
+		<footer class="footer">
+			<section class="practice">
+			
+				<div class="practice__container">
+					<h3 class="practice__h">Practice</h3>
+					<!-- Головний блок форми -->
+					<!-- enctype="multipart/form-data"   без цього не буде передачі данних -->
+			
+					<form class="practice" method="GET" enctype="multipart/form-data" action="#">
+			
+			
+						<!-- Бажанно класти в коробочку -->
+						<div class="practice__line">
+							<!--! Елемент вводу даних input-->
+							<input class="practice__input" tabindex="2" required placeholder="Введіть Вашу країну" name="country"
+								type="text">
+						</div>
+			
+						<div class="practice__line">
+							<label class="practice__label" for="01">Введіть Вашу планету</label>
+			
+							<input id="01" class="practice__input" tabindex="1" required placeholder="Введіть Вашу планету"
+								name="planet" type="text">
+						</div>
+			
+						<div class="practice__line">
+							<a class="link" href="">текст</a>
+						</div>
+			
+			
+						<div class="practice__line">
+							<input class="practice__input" required placeholder="Введіть Ваш E-mail" name="mail" type="email">
+						</div>
+			
+			
+						<!--! Тип tel - поле вводу телефонного номеру -->
+			
+						<div class="practice__line">
+							<input class="practice__input" autocomplete="off" required placeholder="Введіть Ваш номер телефону"
+								name="phone" type="tel">
+						</div>
+			
+			
+						<!--! Тип password - поле вводу пароля- -->
+			
+						<div class="practice__line">
+							<input class="practice__input" autocomplete="off" required placeholder="Введіть Ваш пароль" name="password"
+								type="password">
+						</div>
+						<!--! Тип password - поле вводу числа-->
+			
+						<div class="practice__line">
+							<input class="practice__input" required placeholder="Введіть Ваше  число" name="number" type="number">
+						</div>
+			
+						<!--! Тип color - поле вибору кольору -->
+						<div class="practice__line">
+							<input class="practice__input" placeholder="Введіть Ваше колір" name="color" type="text">
+						</div>
+			
+			
+			
+						<!--! Тип search - поле вибору дати -->
+						<div class="practice__line">
+							<input class="practice__input" autocomplete="off" name="date" type="date">
+						</div>
+			
+						<!--! Тип search - поле вибору кольору -->
+						<div class="practice__line">
+							<input class="practice__input" name="search" type="search">
+						</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+						<!--! Тип range - поле вибору значення -->
+			
+						<div class="practice__line">
+							<input class="practice__input" autocomplete="off" name="range" type="range">
+						</div>
+			
+			
+			
+			
+			
+						<div class="practice__line">
+							<input id="car" class="practice__input " required name="car" type="checkbox">
+							<label class="practice__label" for="car">Бабки є?</label>
+			
+						</div>
+			
+			
+			
+			
+						<!--! </label> окримий тип вводу -->
+						<div class="practice__line">
+							<label class="practice__label">
+								окремий ввід тексту / підпис label
+							</label>
+						</div>
+			
+			
+						<!-- !====================================================radio========================== -->
+			
+						<div class="practice__title">Вибір сторони</div>
+						<div class="practice__radio">
+							<input checked id="02" class="practice__input" name="centr" value="left" type="radio">
+							<label class="practice__label" for="02">Ліво</label>
+						</div>
+			
+			
+			
+						<div class="practice__radio">
+							<input id="03" class="practice__input" required name="centr" value="right" type="radio">
+							<label class="practice__label" for="03">Право</label>
+						</div>
+			
+			
+						<div class="practice__line">
+							<input class="practice__input" name="file" accept="image/png, image/jpeg" multiple type="file">
+			
+						</div>
+			
+			
+						<!--! =========================textarea==== багато тексту============================= -->
+			
+						<div class="practice__line">
+							<textarea name="message" class="practice__area"></textarea>
+						</div>
+			
+			
+			
+						<!--! =======================button=========== -->
+			
+			
+						<div class="practice__line">
+							<button type="submit"> Кнопка</button>
+						</div>
+			
+			
+			
+					</form>
+			
+			
+			
+					<form action="#" method="POST">
+			
+						<div class="practice__line">
+			
+			
+							<label for="name" class="practice__label">Введіть ім'я</label>
+							<input id="name" required autocomplete="off" name="name" placeholder="Введіть ім'я" class="practice__input"
+								type="text">
+			
+						</div>
+			
+						<div class="practice__line">
+							<label for="nam" class="practice__label">Введіть пароль</label>
+							<input id="nam" required autocomplete="off" type="password" name="pass" placeholder="Введіть пароль"
+								class="practice__input">
+						</div>
+			
+			
+						<div class="practice__line">
+							<button type="submit" class="button"><span> Відправити</span></button>
+						</div>
+			
+			-
+			
+			
+			
+					</form>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				</div>
+			</section>
+
+		</footer>
+
+
+
+
+	</div>
+
+
+
+
+
+
+</body>
+
+</html>
